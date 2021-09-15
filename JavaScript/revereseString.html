@@ -1,0 +1,20 @@
+<html>
+<head>
+    <title>reverse string</title>
+</head>
+<body style="background: #282A36">
+    <h2 id="stringStore" style="color: white"> w3resource</h2>
+</body>
+<link rel="stylesheet" href="../JavaScript/revereseString.html">
+<script type="text/javascript">
+    const stringStore = document.getElementById('stringStore');
+    let text = [...stringStore.textContent];
+    let length = text.length;
+    setInterval(() => {
+        let removed = text.pop()
+        stringStore.textContent = text.join('');
+        text.unshift(removed);
+        stringStore.textContent = text.join('');
+    }, 150);
+</script>
+</html>

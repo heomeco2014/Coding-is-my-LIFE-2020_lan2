@@ -1,0 +1,95 @@
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Fira Code', sans-serif;
+    line-height: 1.3;
+    padding: 0;
+    margin: 0;
+    background: grey;
+
+    .form-wrap {
+        max-width: 500px;
+        display: block;
+        margin: 0 auto;
+        margin-top: 10px;
+        padding: 20px;
+        background: white;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+
+        .form-row {
+            display: flex;
+            flex-direction: row;
+
+            input {
+                flex: 1vw;
+                flex-shrink: 2;
+            }
+        }
+    }
+
+    .column-layout {
+        max-width: 1300px;
+        background-color: #fff;
+        margin: 40px auto 0 auto;
+        line-height: 1.65;
+        padding: 20px 50px;
+        display: flex;
+        flex-direction: row;
+
+        .main-column {
+            flex: 3;
+            order: 3;
+        }
+
+        .s1 {
+            order: 2;
+        }
+
+        .s2 {
+            order: 1;
+        }
+
+        .side-bar {
+            flex: 1;
+        }
+    }
+
+    .three-equal {
+        max-width: 1300px;
+        margin: 40px auto 0 auto;
+        @media(min-width:900px){
+            display: flex;
+            justify-content: space-between;
+
+        }
+        .feature {
+            padding: 20px;
+            margin-bottom: 20px;
+            flex-basis: 30%;
+        }
+
+        .a1 {
+            background-color: rgb(151, 176, 208);
+        }
+
+        .a2 {
+            background-color: rgb(152, 225, 170);
+        }
+
+        .a3 {
+            background-color: rgb(232, 237, 149);
+        }
+    }
+}

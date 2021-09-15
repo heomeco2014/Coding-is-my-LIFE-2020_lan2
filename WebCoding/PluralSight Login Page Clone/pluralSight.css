@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Roboto',
+ sans-serif;
+  font-weight: 300;
+  color: #fff;
+  overflow: hidden;
+}
+
+* a {
+  text-decoration: none;
+}
+
+body {
+  background: #181818;
+}
+
+#container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#container #left {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+#container #left #signin {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+}
+
+#container #left #signin .logo {
+  margin-bottom: 8vh;
+}
+
+#container #left #signin .logo img {
+  width: 300px;
+}
+
+#container #left #signin form {
+  width: 80%;
+  padding-bottom: 1rem;
+}
+
+#container #left #signin label {
+  font-size: 0.9rem;
+  line-height: 2rem;
+  font-weight: 500;
+}
+
+#container #left #signin .user-input {
+  margin-bottom: 1.3rem;
+  width: 100%;
+  border-radius: 2px;
+  background: #181818;
+  border: 1px solid cyan;
+  color: #ccc;
+  padding: 0.5rem 1rem;
+  line-height: 1.5rem;
+  font-size: 1.5rem;
+}
+
+#container #left #signin .primary-btn {
+  width: 100%;
+  height: 2.9375rem;
+  padding: 0.5rem 1rem;
+  display: block;
+  border: 0;
+  border-radius: 2px;
+  background: #f96816;
+  font-weight: 500;
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#container #left #signin .primary-btn:hover {
+  background-color: #ff7b39;
+}
+
+#container #left #signin .second-btn,
+#container #left #signin .or,
+#container #left #signin .links {
+  width: 60%;
+}
+
+#container #left #signin .second-btn {
+  padding: 0.7rem 1rem;
+  height: 2.7rem;
+  display: inline-block;
+  border: 1px solid #f4f4f4;
+  border-radius: 2px;
+  font-weight: 500;
+  background: none;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  width: 100%;
+}
+
+#container #left #signin .second-btn:hover {
+  background-color: rgba(87, 85, 85, 0.433);
+  color: #f96816;
+}
+
+#container #left #signin .links a {
+  display: block;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+#container #left #signin .or {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 0.4rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#container #left #signin .or .bar {
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+  height: 0.08rem;
+}
+
+#container #left #signin .or span {
+  padding: 10px 1rem;
+}
+
+#container #left #signin #footer-container {
+  text-align: center;
+  font-size: small;
+  margin-top: 5rem;
+  padding-top: 7rem;
+  max-width: 80%;
+}
+
+#container h1 {
+  font-weight: 300;
+}
+
+#container #right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  #container #right {
+    display: none;
+  }
+}
+
+#container #right #showcase {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: url("https://image.ibb.co/cO9Lxq/login-bg.jpg") no-repeat center center/cover;
+  height: 100vh;
+  text-align: center;
+}
+
+
+#container #right #showcase .showcase-content {
+  background: none;
+}
+/*# sourceMappingURL=pluralSight.css.map */
