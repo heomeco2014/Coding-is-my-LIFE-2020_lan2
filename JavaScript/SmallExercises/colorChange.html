@@ -1,20 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <style>
-        body{
+        body {
             text-align: center;
         }
-        h1{
+
+        h1 {
             font-size: 20px;
             text-decoration: dashed;
             text-transform: capitalize;
             letter-spacing: 2px;
         }
-        button{
+
+        h2 {
+
+            border: 1px solid blue;
+            border-radius: 25%;
+            display: inline-block;
+            padding: 20px;
+        }
+
+        #btn {
             max-width: 100%;
             padding: 15vw;
             background: red;
+        }
+
+        p {
+            position: relative;
+            left: -52px;
+        }
+
+        input {
+            display: block;
+            margin: 0 auto;
+            position: relative;
         }
     </style>
     <meta charset="UTF-8">
@@ -22,9 +44,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Color Changing</title>
 </head>
+
 <body>
+    <input type="text">Hello this is Me</input>
     <h1>Click the button underneath me !</h1>
     <button id="btn">Change Color</button>
+
+    <form action="/dogs" id="tweetForm">
+        <div class="wrap">
+            <p>username</p>
+            <input type="text" name="username" placeholder="username">
+            <p>password</p>
+            <input type="text" name="comment" placeholder="comment">
+        </div>
+        <button>sumbmit</button>
+    </form>
+    <ul id="tweets">
+        <li>Helo1</li>
+        <li>Helo1</li>
+        <li>Helo1</li>
+        <li>Helo1</li>
+    </ul>
     <script src="colorChange.js"></script>
 </body>
+
 </html>
