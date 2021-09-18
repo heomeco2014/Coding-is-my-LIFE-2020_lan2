@@ -8,6 +8,3 @@ const MAP = nums.map(num => {
     return num % 2;
 })
 // MAP
-const test = () => {
-    return 1;
-}

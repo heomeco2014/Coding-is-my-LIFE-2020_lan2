@@ -1,0 +1,20 @@
+.pokemon {
+    display: inline-block;
+    text-align: center;
+}
+
+.pokemon img {
+    display: block;
+}
+
+h1 {
+    border: 1px solid magenta;
+    text-align: center;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.hover{
+    color: aquamarine;
+    background-color: red;
+}
