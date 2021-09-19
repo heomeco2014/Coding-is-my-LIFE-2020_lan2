@@ -2,8 +2,7 @@
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'Roboto',
- sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 300;
   color: #fff;
   overflow: hidden;
@@ -219,7 +218,6 @@ body {
   height: 100vh;
   text-align: center;
 }
-
 
 #container #right #showcase .showcase-content {
   background: none;
