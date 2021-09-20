@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    overflow-x: hidden;
+    background-color: #333;
+    color: #222;
+}
+
+.container {
+    background-color: #fafafa;
+    transform-origin: top left;
+    transition: transform 0.5s linear;
+    width: 100vw;
+    min-height: 100vh;
+    padding: 50px;
+
+    .circle-container {
+        top: -100px;
+        left: -100px;
+        position: fixed;
+
+        .circle {
+            position: fixed;
+            background-color: #ff7979;
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            position: relative;
+            transition: transform 0.5s linear;
+
+            button {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                height: 100px;
+                background-color: transparent;
+                border: 0;
+                color: white;
+                cursor: pointer;
+                i{
+                    font-size: 2rem;
+                }
+                &:focus {
+                    outline: none;
+                }
+            }
+
+            #open {
+                left: 60%;
+            }
+
+            #close {
+                top: 60%;
+                transform: rotate(90deg);
+                transform-origin: top left;
+            }
+
+        }
+    }
+
+    .content {
+        max-width: 1200px;
+        margin: 50px auto;
+
+        h1 {
+            margin: 0;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+    }
+}
+
+nav {
+    position: fixed;
+    bottom: 40px;
+    left: 0;
+    z-index: 100;
+
+    ul {
+        list-style-type: none;
+        padding-left: 10px;
+
+        li {
+            text-transform: uppercase;
+            color: white;
+            margin: 50px 0;
+
+            span {
+                margin-left: 10px;
+            }
+
+            transform: translateX(-100%);
+            transition: transform 0.4 ease-in;
+
+            &:nth-child(1) {
+                margin-left: 15px;
+                transform: translateX(-100%);
+
+            }
+
+            &:nth-child(2) {
+                margin-left: 30px;
+                transform: translateX(-150%);
+
+            }
+
+            &:nth-child(3) {
+                margin-left: 45px;
+                transform: translateX(-200%);
+
+            }
+        }
+    }
+}
+
+.show-nav {
+    transform: rotate(-20deg);
+
+    .circle {
+        transform: rotate(-70deg);
+    }
+}
+
+.container.show-nav+nav li {
+    transform: translateX(-5%);
+    transition-delay: 0.3s;
+}

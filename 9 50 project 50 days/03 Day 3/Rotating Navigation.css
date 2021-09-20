@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 18px;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  overflow-x: hidden;
+  background-color: #333;
+  color: #222;
+}
+
+.container {
+  background-color: #fafafa;
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+  -webkit-transition: -webkit-transform 0.5s linear;
+  transition: -webkit-transform 0.5s linear;
+  transition: transform 0.5s linear;
+  transition: transform 0.5s linear, -webkit-transform 0.5s linear;
+  width: 100vw;
+  min-height: 100vh;
+  padding: 50px;
+}
+
+.container .circle-container {
+  top: -100px;
+  left: -100px;
+  position: fixed;
+}
+
+.container .circle-container .circle {
+  position: fixed;
+  background-color: #ff7979;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  position: relative;
+  -webkit-transition: -webkit-transform 0.5s linear;
+  transition: -webkit-transform 0.5s linear;
+  transition: transform 0.5s linear;
+  transition: transform 0.5s linear, -webkit-transform 0.5s linear;
+}
+
+.container .circle-container .circle button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 100px;
+  background-color: transparent;
+  border: 0;
+  color: white;
+  cursor: pointer;
+}
+
+.container .circle-container .circle button i {
+  font-size: 2rem;
+}
+
+.container .circle-container .circle button:focus {
+  outline: none;
+}
+
+.container .circle-container .circle #open {
+  left: 60%;
+}
+
+.container .circle-container .circle #close {
+  top: 60%;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+}
+
+.container .content {
+  max-width: 1200px;
+  margin: 50px auto;
+}
+
+.container .content h1 {
+  margin: 0;
+}
+
+.container .content img {
+  max-width: 100%;
+}
+
+nav {
+  position: fixed;
+  bottom: 40px;
+  left: 0;
+  z-index: 100;
+}
+
+nav ul {
+  list-style-type: none;
+  padding-left: 10px;
+}
+
+nav ul li {
+  text-transform: uppercase;
+  color: white;
+  margin: 50px 0;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: -webkit-transform 0.4 ease-in;
+  transition: -webkit-transform 0.4 ease-in;
+  transition: transform 0.4 ease-in;
+  transition: transform 0.4 ease-in, -webkit-transform 0.4 ease-in;
+}
+
+nav ul li span {
+  margin-left: 10px;
+}
+
+nav ul li:nth-child(1) {
+  margin-left: 15px;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+nav ul li:nth-child(2) {
+  margin-left: 30px;
+  -webkit-transform: translateX(-150%);
+          transform: translateX(-150%);
+}
+
+nav ul li:nth-child(3) {
+  margin-left: 45px;
+  -webkit-transform: translateX(-200%);
+          transform: translateX(-200%);
+}
+
+.show-nav {
+  -webkit-transform: rotate(-20deg);
+          transform: rotate(-20deg);
+}
+
+.show-nav .circle {
+  -webkit-transform: rotate(-70deg);
+          transform: rotate(-70deg);
+}
+
+.container.show-nav + nav li {
+  -webkit-transform: translateX(-5%);
+          transform: translateX(-5%);
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+}
+/*# sourceMappingURL=Rotating Navigation.css.map */
