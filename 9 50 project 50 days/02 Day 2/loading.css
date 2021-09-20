@@ -27,6 +27,7 @@ body {
 
 .container {
   text-align: center;
+  display: none;
 }
 
 .container .progress-container {
@@ -108,5 +109,52 @@ body {
 .container .btn:disabled {
   background-color: var(--line-border-empty);
   cursor: not-allowed;
+}
+
+.search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.search .input {
+  background-color: #fff;
+  border: 0;
+  font-size: 18px;
+  padding: 15px;
+  height: 50px;
+  width: 50px;
+  -webkit-transition: width 0.3s ease;
+  transition: width 0.3s ease;
+}
+
+.search .btn {
+  background: #fff;
+  border: 0;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50px;
+  width: 50px;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+.btn:focus,
+.input:focus {
+  outline: none;
+}
+
+.active .input {
+  width: 200px;
+}
+
+.active .btn {
+  -webkit-transform: translateX(200px);
+          transform: translateX(200px);
 }
 /*# sourceMappingURL=loading.css.map */

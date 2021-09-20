@@ -45,3 +45,18 @@ function update() {
         next.disabled = false;
     }
 }
+///
+
+const search = document.querySelector('.search');
+const input = document.querySelector('.input');
+const btn = document.querySelector('.btn');
+const body = document.querySelector('body');
+search.addEventListener('click', (e) => {
+    search.classList.add('active');
+    input.focus();
+    e.stopPropagation();
+})
+
+body.addEventListener('click', () => {
+    search.classList.remove('active');
+})

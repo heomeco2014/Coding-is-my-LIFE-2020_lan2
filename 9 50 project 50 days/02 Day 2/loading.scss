@@ -85,9 +85,56 @@ body {
         &:active {
             transform: scale(0.98);
         }
-        &:disabled{
+
+        &:disabled {
             background-color: var(--line-border-empty);
             cursor: not-allowed;
         }
+    }
+
+    display: none;
+}
+
+.search {
+    display: flex;
+    position: relative;
+
+    .input {
+        background-color: #fff;
+        border: 0;
+        font-size: 18px;
+        padding: 15px;
+        height: 50px;
+        width: 50px;
+        transition: width 0.3s ease;
+
+    }
+
+    .btn {
+        background: #fff;
+        border: 0;
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 50px;
+        width: 50px;
+        transition: transform 0.3s ease;
+
+    }
+}
+
+.btn:focus,
+.input:focus {
+    outline: none;
+
+}
+
+.active{
+    .input{
+        width: 200px;
+    }
+    .btn{
+    transform: translateX(200px);
     }
 }
