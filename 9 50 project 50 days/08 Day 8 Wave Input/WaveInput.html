@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="WaveInput.css">
+    <title>Wave input</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Login Form</h1>
+        <form action="">
+            <div class="form-input">
+                <input type="text" name="username" id="username" placeholder="username" required
+                onfocus="this.placeholder=''" onblur="this.placeholder='username'" autocomplete="off" spellcheck="false">
+                <label for="username">username</label>
+            </div>
+            <div class="form-input">
+                <input type="password" name="password" id="password" placeholder="password" required
+                onfocus="this.placeholder=''" onblur="this.placeholder='password'">
+                <label for="password">password</label>
+            </div>
+            <button class=" btn">Login</button>
+            <div id="text">
+                <p class="text">Forget Password ? <span> <a href="#"> Click me</a> </span></p>
+                <p class="text">Don't have an account ? <span> <a href="#"> Click me </a> </span></p>
+            </div>
+        </form>
+    </div>
+    <script src="WaveInput.js"></script>
+</body>
+
+</html>
