@@ -1,32 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap");
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: 'Fira Code', monospace;
 }
 
 body {
+  position: relative;
   overflow: hidden;
   background-color: #00ADB5;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
   color: black;
   padding: 20px;
-  -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
 }
 
@@ -37,9 +27,7 @@ body {
   max-width: 100%;
   padding: 2rem 0;
   border-radius: 1.5rem;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  align-self: center;
 }
 
 .container h3 {
@@ -52,10 +40,27 @@ body {
   font-size: 30px;
   max-width: 100%;
   width: 600px;
-  -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
   text-align: justify;
   letter-spacing: 0.1px;
+}
+
+.createdByMe {
+  position: absolute;
+  width: 151px;
+  padding: 2px;
+  font-size: 10px;
+  opacity: 0.7;
+  margin: 0 40px;
+  color: #7e2a33;
+}
+
+.createdByMe span {
+  position: absolute;
+  max-width: 100%;
+  font-size: 20px;
+  top: -1.7px;
+  left: 135px;
 }
 
 .btn {
@@ -69,8 +74,7 @@ body {
   padding: 5px 26px;
   cursor: pointer;
   outline: none;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
-          box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
 
 .btn:hover {
@@ -79,7 +83,5 @@ body {
 
 .btn:focus, .btn:active {
   background-color: #8e55cf;
-  -webkit-transform: scale(0.98);
-          transform: scale(0.98);
+  transform: scale(0.98);
 }
-/*# sourceMappingURL=Dad Jokes.css.map */

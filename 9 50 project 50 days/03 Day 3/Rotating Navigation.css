@@ -2,8 +2,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-size: 18px;
 }
 
@@ -16,12 +15,8 @@ body {
 
 .container {
   background-color: #fafafa;
-  -webkit-transform-origin: top left;
-          transform-origin: top left;
-  -webkit-transition: -webkit-transform 0.5s linear;
-  transition: -webkit-transform 0.5s linear;
+  transform-origin: top left;
   transition: transform 0.5s linear;
-  transition: transform 0.5s linear, -webkit-transform 0.5s linear;
   width: 100vw;
   min-height: 100vh;
   padding: 50px;
@@ -40,10 +35,7 @@ body {
   width: 200px;
   border-radius: 50%;
   position: relative;
-  -webkit-transition: -webkit-transform 0.5s linear;
-  transition: -webkit-transform 0.5s linear;
   transition: transform 0.5s linear;
-  transition: transform 0.5s linear, -webkit-transform 0.5s linear;
 }
 
 .container .circle-container .circle button {
@@ -71,10 +63,8 @@ body {
 
 .container .circle-container .circle #close {
   top: 60%;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-  -webkit-transform-origin: top left;
-          transform-origin: top left;
+  transform: rotate(90deg);
+  transform-origin: top left;
 }
 
 .container .content {
@@ -106,12 +96,8 @@ nav ul li {
   text-transform: uppercase;
   color: white;
   margin: 50px 0;
-  -webkit-transform: translateX(-100%);
-          transform: translateX(-100%);
-  -webkit-transition: -webkit-transform 0.4 ease-in;
-  transition: -webkit-transform 0.4 ease-in;
+  transform: translateX(-100%);
   transition: transform 0.4 ease-in;
-  transition: transform 0.4 ease-in, -webkit-transform 0.4 ease-in;
 }
 
 nav ul li span {
@@ -120,36 +106,28 @@ nav ul li span {
 
 nav ul li:nth-child(1) {
   margin-left: 15px;
-  -webkit-transform: translateX(-100%);
-          transform: translateX(-100%);
+  transform: translateX(-100%);
 }
 
 nav ul li:nth-child(2) {
   margin-left: 30px;
-  -webkit-transform: translateX(-150%);
-          transform: translateX(-150%);
+  transform: translateX(-150%);
 }
 
 nav ul li:nth-child(3) {
   margin-left: 45px;
-  -webkit-transform: translateX(-200%);
-          transform: translateX(-200%);
+  transform: translateX(-200%);
 }
 
 .show-nav {
-  -webkit-transform: rotate(-20deg);
-          transform: rotate(-20deg);
+  transform: rotate(-20deg);
 }
 
 .show-nav .circle {
-  -webkit-transform: rotate(-70deg);
-          transform: rotate(-70deg);
+  transform: rotate(-70deg);
 }
 
 .container.show-nav + nav li {
-  -webkit-transform: translateX(-5%);
-          transform: translateX(-5%);
-  -webkit-transition-delay: 0.3s;
-          transition-delay: 0.3s;
+  transform: translateX(-5%);
+  transition-delay: 0.3s;
 }
-/*# sourceMappingURL=Rotating Navigation.css.map */

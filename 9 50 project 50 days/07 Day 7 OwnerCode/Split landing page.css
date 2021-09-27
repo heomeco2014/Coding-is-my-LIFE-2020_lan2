@@ -7,8 +7,7 @@
 }
 
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -24,7 +23,6 @@ body .container {
   width: 100%;
   height: 100%;
   background-color: #333;
-  -webkit-transition: hover 1s ease-in-out;
   transition: hover 1s ease-in-out;
 }
 
@@ -34,8 +32,7 @@ body .container h1 {
   position: absolute;
   left: 50%;
   top: 20%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   white-space: nowrap;
 }
 
@@ -43,8 +40,7 @@ body .container .btn {
   position: absolute;
   left: 50%;
   top: 40%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   text-decoration: none;
   color: white;
   font-size: 2rem;
@@ -99,7 +95,6 @@ body .container .right::before {
 }
 
 body .hover-left {
-  -webkit-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
 }
 
@@ -112,7 +107,6 @@ body .hover-left .right {
 }
 
 body .split {
-  -webkit-transition: 1s ease-in-out;
   transition: 1s ease-in-out;
 }
 
@@ -132,4 +126,3 @@ body .hover-right .left {
     width: 8rem;
   }
 }
-/*# sourceMappingURL=Split landing page.css.map */

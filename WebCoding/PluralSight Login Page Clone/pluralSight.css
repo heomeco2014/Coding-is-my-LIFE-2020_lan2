@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:300");
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   color: #fff;
@@ -17,49 +16,24 @@ body {
 }
 
 #container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
 }
 
 #container #left {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  flex: 1;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
 }
 
 #container #left #signin {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 80%;
 }
 
@@ -106,7 +80,6 @@ body {
   color: #fff;
   cursor: pointer;
   text-align: center;
-  -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
@@ -132,7 +105,6 @@ body {
   text-decoration: none;
   cursor: pointer;
   text-align: center;
-  -webkit-transition: all 0.5s;
   transition: all 0.5s;
   width: 100%;
 }
@@ -149,23 +121,14 @@ body {
 }
 
 #container #left #signin .or {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   margin-bottom: 0.4rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 #container #left #signin .or .bar {
-  -webkit-box-flex: 1;
-      -ms-flex: auto;
-          flex: auto;
+  flex: auto;
   height: 0.08rem;
 }
 
@@ -186,16 +149,9 @@ body {
 }
 
 #container #right {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  flex: 1;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 @media (max-width: 768px) {
@@ -205,15 +161,9 @@ body {
 }
 
 #container #right #showcase {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   background: url("https://image.ibb.co/cO9Lxq/login-bg.jpg") no-repeat center center/cover;
   height: 100vh;
   text-align: center;
@@ -222,4 +172,3 @@ body {
 #container #right #showcase .showcase-content {
   background: none;
 }
-/*# sourceMappingURL=pluralSight.css.map */
