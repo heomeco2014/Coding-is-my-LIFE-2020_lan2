@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Fira Code', monospace;
+}
+
+body {
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #eafbff;
+    background-image: linear-gradient(to bottom,
+            #eafbff 0%,
+            #eafbff 50%,
+            #5290f9 50%,
+            #5290f9 100%);
+}
+
+
+nav {
+    width: 80px;
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    border-radius: 5px;
+    transition: width 0.6s linear;
+
+    ul {
+        display: none;
+        width: 100%;
+        transition: width 0.6s linear;
+
+        li {
+            list-style: none;
+            margin-left: 15px;
+            transform: rotateY(0deg);
+            opacity: 0;
+            transition: transform 0.6s linear, opacity 0.6s linear;
+
+
+            a {
+                text-decoration: none;
+                color: black;
+            }
+
+
+        }
+    }
+
+    .icon {
+        background-color: #fff;
+        border: 0;
+        cursor: pointer;
+        padding: 0;
+        position: relative;
+        height: 30px;
+        width: 30px;
+
+        .line {
+            height: 2px;
+            width: 20px;
+            position: absolute;
+            background-color: #5290f9;
+            top: 10px;
+            left: 10px;
+            transition: transform 0.6s linear;
+        }
+
+        .line2 {
+            top: auto;
+            bottom: 10px;
+        }
+        
+    }
+}
+
+.active {
+    width: 350px;
+
+    ul {
+        display: flex;
+        transform: rotateY(0deg);
+        transition: transform 0.6s linear, opacity 0.6s linear;
+
+        li {
+            opacity: 1;
+            transform: rotateY(360deg);
+        }
+
+    }
+
+    .line1 {
+        transform: rotate(-765deg) translateY(5.5px);
+
+    }
+
+    .line2 {
+        transform: rotate(765deg) translateY(-5.5px);
+
+    }
+
+    
+}
