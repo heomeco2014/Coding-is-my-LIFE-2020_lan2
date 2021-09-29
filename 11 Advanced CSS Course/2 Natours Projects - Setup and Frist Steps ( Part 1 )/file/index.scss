@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+/*
+    Light green: #7ed56f
+    Medium green: #55c57a
+    Dark green: #28b485
+*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #777;
+    padding: 30px;
+
+    header {
+        height: 90vh;
+        background: linear-gradient(to right,
+                rgba(126, 213, 111, 0.795),
+                rgba(40, 180, 133, 0.781)),
+            url('https://www.studytienganh.vn/upload/2021/06/105889.jpg');
+        background-size: cover;
+        background-position: top;
+        clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+        position: relative;
+
+        .logo-box {
+            position: absolute;
+            top: 40px;
+            left: 40px;
+
+            img {
+                height: 55px;
+            }
+
+            &:hover {
+                animation-name: moveInRight;
+                animation-duration: 2s;
+            }
+        }
+
+        .text-box {
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 5rem;
+            font-weight: 400;
+            text-transform: uppercase;
+            color: #fff;
+            letter-spacing: 1rem;
+
+            .main-heading {
+                display: block;
+                animation-name: moveInLeft;
+                animation-duration: 3s;
+                backface-visibility: hidden;
+            }
+
+            .second-heading {
+                display: block;
+                font-size: 1.2rem;
+                font-weight: 700;
+                animation: none;
+                animation-name: moveInRight;
+                animation-duration: 3s;
+            }
+
+        }
+
+        .white-btn {
+            background-color: #fff;
+            transition: all 0.1s ease-in;
+            position: relative;
+
+            &:hover {
+                transform: translateY(-3px);
+            }
+
+            &:active {
+                transform: translateY(-1px);
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            }
+
+            &::after {
+                content: '';
+                display: inline-block;
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                top: 0;
+                left: 0;
+                z-index: -1;
+                border-radius: inherit;
+                opacity: 1;
+                transition: all 0.1s ease-out;
+            }
+
+            &:hover::after {
+                opacity: 0;
+                transform: scale(2);
+                background-color: #fff;
+            }
+        }
+
+        .button-animated {
+            animation: moveInBottom .5s ease-in-out .75s;
+            animation-fill-mode: backwards;
+        }
+    }
+}
+
+// All button style
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    padding: 0.5rem 2rem;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    color: #777;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid #fff;
+    transition: all 0.1s ease-in;
+
+    &:hover {
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+}
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    80% {
+        transform: translateX(50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(50%);
+    }
+
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+.box-container {
+    .box {
+        display: inline;
+        width: 200px;
+        height: 200px;
+        background-color: #55c57a;
+    }
+}
