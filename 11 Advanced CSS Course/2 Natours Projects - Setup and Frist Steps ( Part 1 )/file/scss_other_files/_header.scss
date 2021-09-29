@@ -1,0 +1,58 @@
+header {
+    height: 90vh;
+    background: linear-gradient(to right,
+            rgba(126, 213, 111, 0.795),
+            rgba(40, 180, 133, 0.781)),
+        url('https://www.studytienganh.vn/upload/2021/06/105889.jpg');
+    background-size: cover;
+    background-position: top;
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    position: relative;
+
+    .logo-box {
+        position: absolute;
+        top: 4rem;
+        left: 4rem;
+
+        img {
+            height: 55px;
+        }
+
+        &:hover {
+            animation-name: moveInRight;
+            animation-duration: 2s;
+        }
+    }
+
+    .text-box {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 5rem;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: #fff;
+        letter-spacing: 1rem;
+
+        .main-heading {
+            display: block;
+            animation-name: moveInLeft;
+            animation-duration: 3s;
+            backface-visibility: hidden;
+        }
+
+        .second-heading {
+            display: block;
+            font-size: 1.2rem;
+            font-weight: 700;
+            animation: none;
+            animation-name: moveInRight;
+            animation-duration: 3s;
+        }
+    }
+}

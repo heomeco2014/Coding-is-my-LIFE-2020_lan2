@@ -1,0 +1,28 @@
+.row {
+    max-width: $grid-width;
+    background-color: $color-primary-light;
+    margin: 0 auto;
+
+    &:not(:last-child) {
+        margin-bottom: $grid-vertical;
+    }
+
+    @include clearfix;
+    [class^="col-"] {    
+        background-color: orangered;
+        float: left;
+
+        &:not(:last-child) {
+            margin-right: $grid-horizontal;
+        }
+
+    }
+
+    .col-1-of-2 {
+        width: calc((100% - #{$grid-horizontal}) /2);
+    }
+
+    .col-1-of-3 {
+        width: calc((100% - 2 * #{$grid-horizontal}) /3);
+    }
+}

@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Fira Code', monospace;
+    box-sizing: border-box;
+    height: 100vh;
+    overflow: hidden;
+    background-color: white;
+    font-size: 62.5%;
+    padding: 1rem;
+}
+
+nav {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: yellow;
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .navigation {
+        display: flex;
+
+        li {
+            list-style: none;
+
+            &:not(:first-child) {
+                margin-left: 2rem;
+            }
+        }
+    }
+}
+
+.buttons {
+    .btn {
+        border: 1px solid blue;
+        border-radius: 20px;
+        padding: 0.5rem 1.2rem;
+        display: inline-block;
+    }
+
+    .btn-main {
+        background-color: green;
+
+        &:hover {
+            background-color: darken(green, 5%);
+        }
+    }
+
+    .btn-hot {
+        background-color: red;
+
+        &:hover {
+            background-color: darken(green, 5%);
+        }
+    }
+}
+
+// Mixing here 
