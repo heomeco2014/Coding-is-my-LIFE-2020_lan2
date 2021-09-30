@@ -18,9 +18,12 @@ header {
             height: 55px;
         }
 
-        &:hover {
+        &:hover,
+        &:active,
+        &:focus {
             animation-name: moveInRight;
             animation-duration: 2s;
+            cursor: pointer;
         }
     }
 
