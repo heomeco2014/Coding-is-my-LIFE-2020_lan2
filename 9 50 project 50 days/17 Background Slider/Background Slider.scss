@@ -9,7 +9,6 @@
 
 body {
     height: 100vh;
-    // overflow-x: hidden;
     background: url("https://cdn.dribbble.com/users/6230165/screenshots/16575313/media/7c702748ad5bcc9f954408cf6200132b.jpg?compress=1&resize=1200x900") center center/cover;
     display: flex;
     justify-content: center;
@@ -76,6 +75,7 @@ button {
     max-width: 100%;
     transform: translateY(-50%);
     top: 50%;
+    z-index: 2;
 
     &:hover {
         opacity: 0.6;
