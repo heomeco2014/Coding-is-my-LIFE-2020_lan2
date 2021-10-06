@@ -3,7 +3,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Fira Code', monospace;
+  font-family: "Fira Code", monospace;
 }
 
 body {
@@ -28,26 +28,22 @@ nav {
   transition: width 0.6s linear;
   overflow-x: hidden;
 }
-
 nav ul {
   display: flex;
   width: 0;
   list-style: none;
   transition: width 0.6s linear;
 }
-
 nav ul li {
   margin-left: 15px;
   transform: rotateY(0deg);
   opacity: 0;
   transition: transform 0.6s linear, opacity 0.6s linear;
 }
-
 nav ul li a {
   text-decoration: none;
   color: black;
 }
-
 nav .icon {
   background-color: #fff;
   border: 0;
@@ -57,7 +53,6 @@ nav .icon {
   height: 30px;
   width: 30px;
 }
-
 nav .icon .line {
   height: 2px;
   width: 20px;
@@ -67,7 +62,6 @@ nav .icon .line {
   left: 10px;
   transition: transform 0.6s linear;
 }
-
 nav .icon .line2 {
   top: auto;
   bottom: 10px;
@@ -76,20 +70,16 @@ nav .icon .line2 {
 .active {
   width: 350px;
 }
-
 .active ul {
   width: 100%;
 }
-
 .active ul li {
   opacity: 1;
   transform: rotateY(360deg);
 }
-
 .active .line1 {
   transform: rotate(-765deg) translateY(5.5px);
 }
-
 .active .line2 {
   transform: rotate(765deg) translateY(-5.5px);
 }

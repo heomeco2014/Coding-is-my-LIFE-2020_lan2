@@ -11,7 +11,7 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   background-color: #fff;
   background-color: var(--primary-color);
 }
@@ -21,7 +21,6 @@ header {
   display: flex;
   justify-content: flex-end;
 }
-
 header form input {
   border: none;
   outline: none;
@@ -29,7 +28,6 @@ header form input {
   border-radius: 1rem;
   display: block;
 }
-
 header form input::placeholder {
   font-size: 2rem;
   transform: translateY(0.4rem);
@@ -39,7 +37,6 @@ main {
   display: flex;
   flex-wrap: wrap;
 }
-
 main .movie {
   position: relative;
   overflow: hidden;
@@ -49,16 +46,13 @@ main .movie {
   border-radius: 20px 20px 0 0;
   box-shadow: rgba(55, 59, 105, 0.5) 0px 0px 0px 2px;
 }
-
 main .movie:hover .overeview {
   transform: translateY(0);
 }
-
 main .movie img {
   border-radius: 20px 20px 0 0;
   width: 100%;
 }
-
 main .movie .movie-info {
   color: #eee;
   display: flex;
@@ -68,21 +62,18 @@ main .movie .movie-info {
   padding: 0.5rem 1rem 1rem;
   letter-spacing: 0.5px;
 }
-
 main .movie .movie-info .movie--title {
   color: #ad2d69;
   margin-left: 1rem;
   display: block;
   font-size: 1.17rem;
 }
-
 main .movie .movie-info .movie--rating {
   background-color: red;
   padding: 0.25rem 0.5rem;
   border-radius: 3px;
   font-weight: bold;
 }
-
 main .overeview {
   background-color: #fff;
   padding: 2rem;

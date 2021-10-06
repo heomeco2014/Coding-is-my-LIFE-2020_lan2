@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: 'Fira Code', monospace;
+  font-family: "Fira Code", monospace;
   box-sizing: border-box;
   height: 100vh;
   overflow: hidden;
@@ -20,20 +20,16 @@ nav {
   justify-content: space-between;
   background-color: yellow;
 }
-
 nav a {
   text-decoration: none;
   color: black;
 }
-
 nav .navigation {
   display: flex;
 }
-
 nav .navigation li {
   list-style: none;
 }
-
 nav .navigation li:not(:first-child) {
   margin-left: 2rem;
 }
@@ -44,19 +40,15 @@ nav .navigation li:not(:first-child) {
   padding: 0.5rem 1.2rem;
   display: inline-block;
 }
-
 .buttons .btn-main {
   background-color: green;
 }
-
 .buttons .btn-main:hover {
   background-color: #006700;
 }
-
 .buttons .btn-hot {
   background-color: red;
 }
-
 .buttons .btn-hot:hover {
   background-color: #006700;
 }

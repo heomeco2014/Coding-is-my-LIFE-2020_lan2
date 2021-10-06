@@ -3,7 +3,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Heebo';
+  font-family: "Heebo";
 }
 
 :root {
@@ -46,14 +46,12 @@ body {
   align-items: center;
   justify-content: space-between;
 }
-
 .clock-container .clock {
   position: relative;
   width: 200px;
   height: 200px;
   background-color: initial;
 }
-
 .clock-container .clock .needle {
   position: absolute;
   width: 3px;
@@ -63,24 +61,20 @@ body {
   left: 50%;
   transform-origin: bottom center;
 }
-
 .clock-container .clock .hours {
   background-color: red;
   transform: translate(-50%, -100%) rotate(0deg);
 }
-
 .clock-container .clock .minutes {
   transform: translate(-50%, -100%) rotate(0deg);
   height: 100px;
 }
-
 .clock-container .clock .seconds {
   transform: translate(-50%, -100%) rotate(0deg);
   height: 100px;
   background-color: #e74c3c;
   transition: transform 1s linear;
 }
-
 .clock-container .clock .center-point {
   position: absolute;
   width: 10px;
@@ -91,7 +85,6 @@ body {
   transform: translate(-50%, -50%);
   border-radius: 50%;
 }
-
 .clock-container .clock .center-point::after {
   content: "";
   position: absolute;
@@ -103,19 +96,16 @@ body {
   transform: translate(-50%, -50%);
   border-radius: 50%;
 }
-
 .clock-container .time {
   font-size: 3rem;
   color: var(--pri-color);
   margin-top: 2rem;
 }
-
 .clock-container .date {
   font-size: 1rem;
   text-transform: uppercase;
   color: grey;
 }
-
 .clock-container .date .circle {
   width: 18px;
   height: 18px;

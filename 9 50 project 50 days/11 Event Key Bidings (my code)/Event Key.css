@@ -3,7 +3,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Fira Code', monospace;
+  font-family: "Fira Code", monospace;
 }
 
 body {
@@ -17,7 +17,6 @@ body {
   color: white;
   font-size: 1.3rem;
 }
-
 body .container {
   display: flex;
   justify-content: center;
@@ -25,14 +24,12 @@ body .container {
   flex-wrap: nowrap;
   gap: 5vw;
 }
-
 body .container .wrap {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-
 body .container .wrap .event {
   height: 11.1vh;
   width: 130%;

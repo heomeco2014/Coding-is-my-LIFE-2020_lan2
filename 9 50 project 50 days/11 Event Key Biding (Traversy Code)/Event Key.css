@@ -3,7 +3,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Fira Code', monospace;
+  font-family: "Fira Code", monospace;
 }
 
 body {
@@ -16,7 +16,6 @@ body {
   color: white;
   text-align: center;
 }
-
 body #insert .key {
   border: 1px solid #294429;
   background-color: #ffbebe;
@@ -29,7 +28,6 @@ body #insert .key {
   position: relative;
   min-width: 100px;
 }
-
 body #insert .key small {
   position: absolute;
   top: -24px;

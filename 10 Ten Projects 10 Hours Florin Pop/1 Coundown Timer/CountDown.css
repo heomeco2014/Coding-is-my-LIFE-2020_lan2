@@ -15,32 +15,27 @@ body {
   color: white;
   background-color: transparent;
 }
-
 body h1 {
   font-size: 4rem;
   margin-top: -8rem;
   font-weight: normal;
 }
-
 body #count-down-container {
   display: flex;
   max-width: 600px;
   position: relative;
   margin-left: -50px;
 }
-
 body #count-down-container .big-text {
   font-weight: bold;
   font-size: 6rem;
   line-height: 1;
   margin: 0 25px;
 }
-
 body #count-down-container .countdown-el {
   text-align: center;
   position: relative;
 }
-
 body #count-down-container .countdown-el span {
   font-size: 1.5rem;
 }

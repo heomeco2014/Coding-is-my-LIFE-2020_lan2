@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 @import "./scss_other_files/header";
-@import "./scss_other_files/keyframes";
-@import "../file/scss_other_files/variable";
+@import "./icon_fonts/var";
+// @import "./scss_other_files/keyframes";
 @import "./scss_other_files/button";
 @import "./scss_other_files/mixins";
 @import "./scss_other_files/grid";
 @import "./scss_other_files/utility";
 @import "./scss_other_files/typography";
+@import "./scss_other_files/sectionfeature";
+@import "./scss_other_files/cards";
 
 * {
     box-sizing: border-box;

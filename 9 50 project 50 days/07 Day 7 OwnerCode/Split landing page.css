@@ -13,11 +13,10 @@
 }
 
 body {
-  font-family: 'Mulish', sans-serif;
+  font-family: "Mulish", sans-serif;
   height: 100vh;
   overflow: hidden;
 }
-
 body .container {
   position: relative;
   width: 100%;
@@ -25,7 +24,6 @@ body .container {
   background-color: #333;
   transition: hover 1s ease-in-out;
 }
-
 body .container h1 {
   font-size: 3rem;
   color: white;
@@ -35,7 +33,6 @@ body .container h1 {
   transform: translateX(-50%);
   white-space: nowrap;
 }
-
 body .container .btn {
   position: absolute;
   left: 50%;
@@ -50,7 +47,6 @@ body .container .btn {
   text-align: center;
   padding: 1rem;
 }
-
 body .container a {
   text-decoration: none;
   color: #fff;
@@ -58,62 +54,51 @@ body .container a {
   padding: 5px 10px;
   font-size: 2rem;
 }
-
 body .container .split {
   position: absolute;
   overflow: hidden;
   width: 50%;
   min-height: 100vh;
 }
-
 body .container .left {
   background: url("https://store-images.s-microsoft.com/image/apps.38595.13798539581762600.215d02f1-0142-4972-88fb-175001d957e3.4cc7b353-559a-4bf8-8bad-8c88c6957b08") no-repeat center/cover;
   top: 0;
   left: 0;
 }
-
 body .container .left::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   height: 100%;
   background-color: var(--left-bg-color);
 }
-
 body .container .right {
   background: url("https://pbs.twimg.com/media/Dwew7IIW0AAPtTv.jpg") no-repeat center/cover;
   min-height: 100vh;
   right: 0;
 }
-
 body .container .right::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   height: 100%;
   background-color: var(--right-bg-color);
 }
-
 body .hover-left {
   transition: 0.4s ease-in-out;
 }
-
 body .hover-left .left {
   width: var(--hover-width);
 }
-
 body .hover-left .right {
   width: var(--hover-other);
 }
-
 body .split {
   transition: 1s ease-in-out;
 }
-
 body .hover-right .right {
   width: var(--hover-width);
 }
-
 body .hover-right .left {
   width: var(--hover-other);
 }

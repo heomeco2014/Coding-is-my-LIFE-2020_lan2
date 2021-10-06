@@ -1,10 +1,11 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: 'Muli', sans-serif;
+  font-family: "Muli", sans-serif;
   background-color: #f0f0f0;
 }
 
@@ -17,7 +18,6 @@ h1 {
   max-width: 600px;
   margin: 0 auto;
 }
-
 .faq-container .faq {
   background-color: transparent;
   border: 1px solid #9fa4a8;
@@ -28,16 +28,13 @@ h1 {
   overflow: hidden;
   transition: 0.3s ease;
 }
-
 .faq-container .faq .faq-title {
   margin: 0 35px 0 0;
 }
-
 .faq-container .faq .faq-text {
   display: none;
   margin: 30px 0 0;
 }
-
 .faq-container .faq .faq-toggle {
   background-color: transparent;
   border: 0;
@@ -54,23 +51,19 @@ h1 {
   height: 30px;
   width: 30px;
 }
-
 .faq-container .faq .faq-toggle:focus {
   outline: 0;
 }
-
 .faq-container .faq .faq-toggle .fa-times {
   display: none;
 }
-
 .faq-container .active {
   background-color: #fff;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
 }
-
 .faq-container .active::before, .faq-container .active::after {
-  content: '\f075';
-  font-family: 'Font Awesome 5 Free';
+  content: "";
+  font-family: "Font Awesome 5 Free";
   color: #2ecc71;
   font-size: 7rem;
   position: absolute;
@@ -79,14 +72,12 @@ h1 {
   left: 20px;
   z-index: 0;
 }
-
 .faq-container .active::before {
   color: #3498db;
   top: -10px;
   left: -10px;
   transform: rotateY(180deg);
 }
-
 .faq-container .active .faq-text {
   display: block;
 }

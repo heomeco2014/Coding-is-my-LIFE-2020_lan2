@@ -4,7 +4,7 @@
 }
 
 body {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,7 +12,6 @@ body {
   overflow: hidden;
   margin: 0;
 }
-
 body .bg {
   background: url("https://cdn.hswstatic.com/gif/chess-4.jpg") no-repeat center center/cover;
   position: absolute;
@@ -23,7 +22,6 @@ body .bg {
   z-index: -1;
   filter: blur(0px);
 }
-
 body .loading-text {
   font-size: 5rem;
   color: white;
