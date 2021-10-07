@@ -19,6 +19,7 @@ body {
 body #buttons {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
   text-align: center;
   gap: 10px 20px;
@@ -39,4 +40,8 @@ body #buttons .btn:hover {
 body #buttons .btn:focus {
   transform: scale(0.97);
   outline: none;
+}
+body .heading {
+  color: red;
+  font-size: 20px;
 }

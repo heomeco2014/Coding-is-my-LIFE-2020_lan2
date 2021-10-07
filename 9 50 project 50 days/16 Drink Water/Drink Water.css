@@ -16,7 +16,6 @@ body {
   color: white;
   margin-bottom: 40rem;
 }
-
 body h3 {
   font-size: 1.8rem;
   margin-bottom: 1rem;
@@ -35,16 +34,13 @@ body h3 {
   align-items: center;
   justify-content: center;
 }
-
 .cup .remained {
   margin-top: auto;
 }
-
 .cup .remained span {
   text-align: center;
   display: block;
 }
-
 .cup .percentage {
   text-align: center;
   width: 100%;
@@ -73,7 +69,6 @@ body h3 {
   gap: 2rem;
   text-align: center;
 }
-
 .cups .fist-row,
 .cups .second-row {
   display: flex;

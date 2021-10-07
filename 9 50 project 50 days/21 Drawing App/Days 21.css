@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Fira Code", monospace;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body #canvas {
+  border: 1px solid blue;
+}
+
+.toolbox {
+  background-color: steelblue;
+  display: flex;
+  width: 800px;
+  padding: 1rem;
+  font-size: 2rem;
+}
+.toolbox > * {
+  border-radius: 10px;
+  width: 50px;
+  height: 50px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.toolbox #size {
+  cursor: default;
+}
+.toolbox #decrease {
+  background-color: transparent;
+  border: 3px solid rgba(255, 0, 0, 0.404);
+}
+.toolbox #decrease:hover {
+  background-color: red;
+}
+.toolbox #increase {
+  background-color: transparent;
+  border: 3px solid green;
+}
+.toolbox #increase:hover {
+  background-color: green;
+}
+.toolbox #color {
+  background-color: transparent;
+  transform: scale(1.1);
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  margin-left: 1rem;
+}
+.toolbox #color:hover {
+  transform: scale(1.2);
+}
+.toolbox #clear {
+  margin-left: auto;
+  border-radius: 0;
+}
