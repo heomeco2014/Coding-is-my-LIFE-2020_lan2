@@ -19,8 +19,19 @@ body {
 
 body #buttons {
   display: flex;
+<<<<<<< Updated upstream
   align-items: center;
   flex-wrap: wrap;
+=======
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+>>>>>>> Stashed changes
   text-align: center;
   gap: 10px 20px;
 }
@@ -44,3 +55,12 @@ body #buttons .btn:focus {
   transform: scale(0.97);
   outline: none;
 }
+<<<<<<< Updated upstream
+=======
+
+body .heading {
+  color: red;
+  font-size: 20px;
+}
+/*# sourceMappingURL=Sound Board.css.map */
+>>>>>>> Stashed changes
