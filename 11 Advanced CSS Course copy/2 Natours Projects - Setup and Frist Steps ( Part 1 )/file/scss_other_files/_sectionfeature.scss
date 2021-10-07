@@ -1,0 +1,41 @@
+.section-features {
+    padding: 20rem 0;
+    margin-top: -12vh;
+    background: linear-gradient(to right,
+            rgba(126, 213, 111, 0.795),
+            rgba(40, 180, 133, 0.781)),
+        url('https://www.worldatlas.com/r/w1200/upload/56/fb/ee/alaska-mountain-range-csnafzger.jpg') no-repeat center/cover;
+    transform: skewY(-7deg);
+
+    &>* {
+        transform: skewY(7deg);
+    }
+}
+
+.feature-box {
+    background-color: rgba($color-white, .8);
+    font-size: 1.5rem;
+    padding: 2.5rem;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+    text-align: center;
+    transition: transform .2s ease-in-out;
+
+    &__icon {
+        font-size: 6rem;
+        background-image: linear-gradient(to right, #55c57a, #28b485);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }
+
+    &:hover {
+        transform: translateY(-1.5rem) scale(1.2);
+    }
+
+}
+
+.section-tours {
+    padding: 20rem 0 50rem 0;
+    background-color: rgba($color-grey-light, .8);
+}

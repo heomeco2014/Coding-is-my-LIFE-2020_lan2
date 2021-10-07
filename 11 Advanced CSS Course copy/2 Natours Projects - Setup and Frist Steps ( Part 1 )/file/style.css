@@ -1,0 +1,335 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+header {
+  height: 90vh;
+  background: linear-gradient(to right, rgba(126, 213, 111, 0.795), rgba(40, 180, 133, 0.781)), url("https://www.studytienganh.vn/upload/2021/06/105889.jpg");
+  background-size: cover;
+  background-position: top;
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  position: relative;
+}
+header .logo-box {
+  position: absolute;
+  top: 4rem;
+  left: 4rem;
+}
+header .logo-box img {
+  height: 55px;
+}
+header .logo-box:hover, header .logo-box:active, header .logo-box:focus {
+  animation-name: moveInRight;
+  animation-duration: 2s;
+  cursor: pointer;
+}
+header .text-box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+header h1 {
+  font-size: 5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 1rem;
+}
+header h1 .main-heading {
+  display: block;
+  animation-name: moveInLeft;
+  animation-duration: 3s;
+  backface-visibility: hidden;
+}
+header h1 .second-heading {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 700;
+  animation: none;
+  animation-name: moveInRight;
+  animation-duration: 3s;
+}
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  font-size: 1.6rem;
+  border-radius: 2.5rem;
+  color: #777;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid #fff;
+  transition: all 0.1s ease-in;
+}
+.btn:link:hover,
+.btn:visited:hover {
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.white-btn {
+  background-color: #fff;
+  transition: all 0.1s ease-in;
+  position: relative;
+}
+.white-btn:hover {
+  transform: translateY(-3px);
+}
+.white-btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+.white-btn::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  border-radius: inherit;
+  opacity: 1;
+  transition: all 0.1s ease-out;
+}
+.white-btn:hover::after {
+  opacity: 0;
+  transform: scale(2);
+  background-color: #fff;
+}
+
+.button-animated {
+  animation: moveInBottom 0.5s ease-in-out 0.75s;
+  animation-fill-mode: backwards;
+}
+
+.btn-text:link, .btn-text:visited {
+  color: #55c57a;
+  font-size: 1.6rem;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 0.2rem solid #55c57a;
+  padding: 3px;
+  transition: all 0.2s;
+}
+.btn-text:hover {
+  background-color: #7ed56f;
+  color: white;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+.btn-text:active {
+  box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.15);
+  transform: translateY(0);
+}
+
+.row {
+  max-width: 114rem;
+  margin: 0 auto;
+}
+.row:not(:last-child) {
+  margin-bottom: 8rem;
+}
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.row [class^=col-] {
+  float: left;
+}
+.row [class^=col-]:not(:last-child) {
+  margin-right: 6rem;
+}
+.row .col-1-of-2 {
+  width: calc((100% - 6rem) / 2);
+}
+.row .col-1-of-3 {
+  width: calc((100% - 2 * 6rem) / 3);
+}
+.row .col-2-of-3 {
+  width: calc(2* ((100% - 2 * 6rem) / 3) + 6rem);
+}
+.row .col-1-of-4 {
+  width: calc((100% - 3 * 6rem) / 4);
+}
+.row .col-2-of-4 {
+  width: calc((2* (100% - 3 * 6rem) / 4) + 6rem);
+}
+.row .col-3-of-4 {
+  width: calc((100% - 3* 6rem)*(3/4) + 2*6rem);
+}
+
+.u-center-box {
+  text-align: center;
+}
+
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem;
+}
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem;
+}
+
+.u-margin-bottom-big {
+  margin-bottom: 8rem;
+}
+
+.section-about {
+  background: #f8f8f8;
+  padding: 25vh;
+  margin-top: -20vh;
+}
+
+.heading-secondary {
+  font-size: 3.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  display: inline-block;
+  background-image: linear-gradient(to right, #55c57a, #28b485);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  transition: all 0.1s;
+}
+.heading-secondary:hover {
+  transform: skewX(2deg) skewY(1deg) scale(1.1);
+  text-shadow: 0.5rem 1rem 5rem #55c57a;
+}
+
+.heading-tertiary {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.paragraph {
+  font-size: 1.6rem;
+}
+.paragraph:not(:last-child) {
+  margin-bottom: 3rem;
+}
+
+.composition {
+  position: relative;
+}
+.composition__photo {
+  object-fit: cover;
+  width: 55%;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+  position: absolute;
+  outline-offset: 2rem;
+  border-radius: 2px;
+  transition: transform 0.3s ease;
+}
+.composition__photo--p1 {
+  left: 0;
+  top: -2rem;
+}
+.composition__photo--p2 {
+  right: 0;
+  top: 0;
+}
+.composition__photo--p3 {
+  left: 20%;
+  top: 8rem;
+}
+.composition__photo:hover {
+  transform: scale(1.2);
+  outline: 1rem solid #55c57a;
+}
+.composition:hover .composition__photo:not(:hover) {
+  transform: scale(0.65);
+}
+
+.section-features {
+  padding: 20rem 0;
+  margin-top: -12vh;
+  background: linear-gradient(to right, rgba(126, 213, 111, 0.795), rgba(40, 180, 133, 0.781)), url("https://www.worldatlas.com/r/w1200/upload/56/fb/ee/alaska-mountain-range-csnafzger.jpg") no-repeat center/cover;
+  transform: skewY(-7deg);
+}
+.section-features > * {
+  transform: skewY(7deg);
+}
+
+.feature-box {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 1.5rem;
+  padding: 2.5rem;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+}
+.feature-box__icon {
+  font-size: 6rem;
+  background-image: linear-gradient(to right, #55c57a, #28b485);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.feature-box:hover {
+  transform: translateY(-1.5rem) scale(1.2);
+}
+
+.section-tours {
+  padding: 20rem 0 50rem 0;
+  background-color: rgba(248, 248, 248, 0.8);
+}
+
+.card {
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 50rem;
+}
+.card__side {
+  height: 50rem;
+  transition: all 0.8s ease;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  backface-visibility: hidden;
+  border-radius: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+}
+.card__side--front {
+  background-color: #fff;
+}
+.card__side--back {
+  transform: rotateY(180deg);
+}
+.card__side--back-1 {
+  background-image: linear-gradient(to right bottom, #ffb900, #ff7730);
+}
+.card:hover .card__side--front {
+  transform: rotateY(-180deg);
+}
+.card:hover .card__side--back {
+  transform: rotateY(0deg);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #777;
+  padding: 3rem;
+  margin-bottom: 20rem;
+  border-spacing: 15px;
+}
