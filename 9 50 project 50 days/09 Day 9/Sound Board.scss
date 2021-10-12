@@ -20,6 +20,7 @@ body {
     #buttons {
         display: flex;
         align-items: center;
+        justify-content: center;
         flex-wrap: wrap;
         text-align: center;
         gap: 10px 20px;
@@ -33,14 +34,21 @@ body {
             font-size: 3.2rem;
             text-transform: capitalize;
             transition: transform 0.3s ease-in-out;
-            &:hover{
+
+            &:hover {
                 background-color: rgb(108, 37, 179);
             }
-            &:focus{
+
+            &:focus {
                 transform: scale(0.97);
-            outline: none;
+                outline: none;
             }
         }
     }
 
+    .heading {
+        color: red;
+        font-size: 20px;
+    }
+    
 }
