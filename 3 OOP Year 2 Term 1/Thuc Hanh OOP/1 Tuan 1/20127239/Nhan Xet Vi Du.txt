@@ -1,0 +1,4 @@
+Thứ tự khởi tạo constructor và huỷ destructor sẽ có thứ tự ưu tiên khác nhau tuỳ vào base class
+Thứ tự là:
+Sẽ theo các biến Global trước sau đó sẽ theo thứ tự khai báo
+Khai báo cuối cùng thì sẽ xoá đầu tiên
