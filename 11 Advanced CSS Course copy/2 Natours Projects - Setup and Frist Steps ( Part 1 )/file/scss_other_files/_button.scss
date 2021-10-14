@@ -1,21 +1,45 @@
 // All button style
-.btn:link,
-.btn:visited {
-    display: inline-block;
-    padding: 1rem 2.5rem;
-    font-size: 1.6rem;
-    border-radius: 2.5rem;
-    color: #777;
-    cursor: pointer;
-    text-transform: uppercase;
-    text-align: center;
-    text-decoration: none;
-    border: 1px solid #fff;
-    transition: all 0.1s ease-in;
+.btn {
 
-    &:hover {
-        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    &,
+    &:link,
+    &:visited {
+        display: inline-block;
+        padding: 1rem 2.5rem;
+        font-size: 1.6rem;
+        border-radius: 2.5rem;
+        color: #777;
+        cursor: pointer;
+        text-transform: uppercase;
+        text-align: center;
+        text-decoration: none;
+        border: 1px solid #fff;
+        transition: all 0.1s ease-in;
     }
+
+    &-green {
+        display: inline-block;
+        background-color: #28b485;
+        border: none;
+        box-shadow: 0 0.4rem 2px rgb(85 197 122 / 60%);
+        padding: 1rem 2.5rem;
+        font-size: 1.6rem;
+        border-radius: 2.5rem;
+        cursor: pointer;
+        text-transform: uppercase;
+        text-align: center;
+        color: $color-white;
+        transition: all 0.1s ease-in;
+
+        &:hover {
+            transform: scale(1.1);
+            box-shadow: 0 1rem 3px rgba($color-secondary-light, .15);
+        }
+    }
+}
+
+.button {
+    text-align: center;
 }
 
 .white-btn {
@@ -82,5 +106,5 @@
         box-shadow: 0 0.5rem 2rem rgba($color-black, .15);
         transform: translateY(0);
     }
-}
 
+}

@@ -13,6 +13,28 @@
 .u-margin-bottom-big {
     margin-bottom: 8rem;
 }
+
 .u-margin-top-big {
     margin-top: 8rem;
+}
+.u-margin-top-small {
+    margin-top: 2rem;
+}
+
+.u-big-btn {
+    display: inline-block;
+    border: none;
+    padding: 1rem 2rem;
+    margin: 0;
+    text-decoration: none;
+    background: #0069ed;
+    color: #ffffff;
+    font-family: sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    transition: background 250ms ease-in-out, 
+                transform 150ms ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
 }
