@@ -1,3 +1,4 @@
+@import "../scss_other_files/keyframes";
 header {
     height: 90vh;
     background: linear-gradient(to right,
@@ -36,8 +37,8 @@ header {
     }
 
     h1 {
-        font-size: 5rem;
-        font-weight: 400;
+        font-size: 8rem;
+        font-weight: 500;
         text-transform: uppercase;
         color: #fff;
         letter-spacing: 1rem;
@@ -51,8 +52,8 @@ header {
 
         .second-heading {
             display: block;
-            font-size: 1.2rem;
-            font-weight: 700;
+            font-size: 2rem;
+            font-weight: 300;
             animation: none;
             animation-name: moveInRight;
             animation-duration: 3s;

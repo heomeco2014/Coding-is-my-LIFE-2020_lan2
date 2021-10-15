@@ -10,6 +10,7 @@
 
     transform: skewX(-12deg);
     margin-bottom: 5rem;
+    transition: all 0.2s;
 
     &__shape {
         width: 15rem;
@@ -29,6 +30,7 @@
         width: 100%;
         backface-visibility: hidden;
         transform: scale(1.5);
+        transition: all 0.2s
     }
 
 
@@ -59,9 +61,11 @@
     &:hover &__image {
         transform: scale(1);
         filter: blur(5px) grayscale(50%);
+        transition: all 0.2s;
     }
 
 }
+
 .btn-text {
     color: #55c57a;
     font-size: 1.6rem;
