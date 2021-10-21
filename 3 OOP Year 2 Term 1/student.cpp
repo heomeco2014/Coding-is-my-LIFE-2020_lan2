@@ -22,6 +22,7 @@ public:
         getline(cin, studentAddress);
         cout << "Input mathScore ";
         cin >> studentMathScore;
+        
         cout << "Input studentLitScore ";
         cin >> studentLitScore;
     }

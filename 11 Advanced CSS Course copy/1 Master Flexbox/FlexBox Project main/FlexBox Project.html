@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="FlexBox Project.css">
+    <title>Nhat Minh &mdash; Flex box way to Master</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <a href="https://www.facebook.com/nhatminhchess/">
+                <img src="../img/3465596-desert-egypt-egyptian-giza-landmark-pyramid-tourism_107614.svg" alt=""
+                    class="logo">
+            </a>
+            <form action="#" class="search">
+                <input type="text" name="search" id="search" placeholder="Search hotels" class="search__input">
+                <div class="search__button">
+                    <div class="search__icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                </div>
+            </form>
+            <nav class="user-nav">
+                <div class="user-nav__icon-box">
+                    <div class="user-nav__icon">
+                        <img src="../img/bookmark.svg"></img>
+                    </div>
+                    <span class="user-nav__notification">7</span>
+                </div>
+                <div class="user-nav__icon-box">
+                    <div class="user-nav__icon">
+                        <img src="../img/chat.svg"></img>
+                    </div>
+                    <span class="user-nav__notification">13</span>
+                </div>
+                <div class="user-nav__icon-box">
+                    <img src="https://scontent.fsgn5-10.fna.fbcdn.net/v/t1.6435-9/44932133_2181771695476907_5399865920866746368_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=j0XgtaHXp28AX9_mLBr&_nc_ht=scontent.fsgn5-10.fna&oh=15b175bd1259ae10336e3ab7902b4058&oe=61917033"
+                        alt="" class="user-nav__user-photo">
+                    <span class="user-nav__name">Minh</span>
+                </div>
+            </nav>
+        </div>
+        <div class="content">
+            <div class="sidebar">
+                <ul class="side-nav">
+                    <li class="side-nav__item side-nav__item--active">
+                        <a href="#" class="side-nav__link">
+                            <i class="fas fa-hotel side-nav__icon"></i>
+                            <span class="side-nav__icon-name">Hotel</span>
+                        </a>
+                    </li>
+                    <li class="side-nav__item">
+                        <a href="#" class="side-nav__link">
+                            <i class="fas fa-helicopter side-nav__icon"></i>
+                            <span class="side-nav__icon-name">Flight</span>
+                        </a>
+                    </li>
+                    <li class="side-nav__item">
+                        <a href="#" class="side-nav__link">
+                            <i class="fas fa-taxi side-nav__icon"></i>
+                            <span class="side-nav__icon-name">Car Rental</span>
+                        </a>
+                    </li>
+                    <li class="side-nav__item">
+                        <a href="#" class="side-nav__link">
+                            <i class="fas fa-map side-nav__icon"></i>
+                            <span class="side-nav__icon-name">Tours</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="legal">
+                    &copy; 2021 by Minh. All right reserved.
+                </div>
+            </div>
+            <div class="hotel-view">
+                <div class="gallery">
+                    <figure class="gallery__item">
+                        <img src="https://vietnamtravel.com/images/2020/10/ho-chi-minh-stilt-house-1.jpg" alt=""
+                            class="gallery__photo">
+                    </figure>
+                    <figure class="gallery__item">
+                        <img src="https://1.bp.blogspot.com/-iXKdcaISXWc/T1ey9KCpDCI/AAAAAAAAEo0/0oAjTCfNCGs/s1600/Casa-Ho-Chi-Minh-Hanoi.JPG"
+                            alt="" class="gallery__photo">
+                    </figure>
+                    <figure class="gallery__item">
+                        <img src="https://q4g9y5a8.rocketcdn.me/wp-content/uploads/2020/02/home-banner-2020-02-min.jpg"
+                            alt="" class="gallery__photo">
+                    </figure>
+                </div>
+                <div class="overview">
+                    <div class="overview__heading">Hotel Las Palmas</div>
+                    <div class="overview__stars">
+                        <i class="fas fa-star overview__stars-icon"></i>
+                        <i class="fas fa-star overview__stars-icon"></i>
+                        <i class="fas fa-star overview__stars-icon"></i>
+                        <i class="fas fa-star overview__stars-icon"></i>
+                        <i class="far fa-star overview__stars-icon"></i>
+                    </div>
+                    <div class="overview__location">
+                        <i class="fas fa-map-marker-alt overview__location-icon"></i>
+                        <button class="btn-inline">Viet Nam, Ho Chi Minh City</button>
+                    </div>
+                    <div class="overview__rating">
+                        <div class="overview__rating-avg">8.6</div>
+                        <div class="overview__rating-total">429 rating</div>
+                    </div>
+                </div>
+                <div class="detail">
+                    <div class="description">
+                        <p class="paragraph">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe molestiae ab provident aut
+                            nesciunt magnam itaque, voluptatibus cumque neque tempora debitis nisi. Maiores nemo totam
+                            dolor quisquam reiciendis sed vel?
+                        </p>
+                        <p class="paragraph">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi delectus, quam possimus
+                            temporibus provident labore.
+                        </p>
+                        <ul class="list">
+                            <li class="list__item"><i class="fas fa-chevron-right"></i> Close to the beach</li>
+                            <li class="list__item"><i class="fas fa-chevron-right"></i> Breakfast inlcuded</li>
+                            <li class="list__item"><i class="fas fa-chevron-right"></i> Free airpot shuttle</li>
+                            <li class="list__item"><i class="fas fa-chevron-right"></i> Freee wifi</li>
+                            <li class="list__item"><i class="fas fa-chevron-right"></i> Lorem ipsum dolor sit.</li>
+                            <li class="list__item"><i class="fas fa-chevron-right"></i> Lorem ipsum dolor sit</li>
+                            <li class="list__item"><i class="fas fa-chevron-right"></i> Lorem ipsum dolor sit.</li>
+                            <li class="list__item"><i class="fas fa-chevron-right"></i> Lorem, ipsum dolor.</li>
+                        </ul>
+                        <div class="recommend">
+                            <p class="recommend__count">
+                                Lucy and 3 other friends recommend this hotel
+                            </p>
+                            <div class="recommend__friends">
+                                <img src="https://images.pexels.com/photos/1903923/pexels-photo-1903923.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+                                    alt="" class="recommend__photo">
+                                <img src="https://images.pexels.com/photos/1853102/pexels-photo-1853102.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                                    alt="" class="recommend__photo">
+                                <img src="https://images.pexels.com/photos/1999524/pexels-photo-1999524.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+                                    alt="" class="recommend__photo">
+                                <img src="https://images.pexels.com/photos/2692554/pexels-photo-2692554.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+                                    alt="" class="recommend__photo">
+                                <img src="https://images.pexels.com/photos/1386604/pexels-photo-1386604.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+                                    alt="" class="recommend__photo">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="user-reviews">
+                        <figure class="review">
+                            <blockquote class="review__text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi cum quasi voluptas
+                                debitis harum iure autem quos necessitatibus doloribus dolores.
+                            </blockquote>
+                            <figcaption class="review__user">
+                                <img src="https://images.pexels.com/photos/3671083/pexels-photo-3671083.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                                    alt="Smiling Girl" class="review__photo">
+
+                                <div class="review__user-box">
+                                    <div class="review__user-name">Thanh Tuyen</div>
+                                    <div class="review__user-date"> Oct 18th, 2021</div>
+                                </div>
+                                <div class="review__rating">9.3</div>
+                            </figcaption>
+                        </figure>
+                        <figure class="review">
+                            <blockquote class="review__text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi cum quasi voluptas
+                                debitis harum
+                            </blockquote>
+                            <figcaption class="review__user">
+                                <img src="https://images.pexels.com/photos/4641451/pexels-photo-4641451.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                                    alt="Smiling Girl" class="review__photo">
+
+                                <div class="review__user-box">
+                                    <div class="review__user-name">Nhat Minh</div>
+                                    <div class="review__user-date"> Feb 23rd, 2021</div>
+                                </div>
+                                <div class="review__rating">9.3</div>
+                            </figcaption>
+                        </figure>
+                        <button class="btn-inline last-btn">Show all <span>&rarr;</span></button>
+                    </div>
+                </div>
+                <div class="cta">
+                    <h2 class="cta__book-now">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus.</h2>
+                    <button class="btn">
+                        <span class="btn__visible">Book now</span>
+                        <span class="btn__invisible">Only 4 rooms left</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
