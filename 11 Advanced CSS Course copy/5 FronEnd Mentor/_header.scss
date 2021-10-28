@@ -1,0 +1,62 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    align-items: flex-start;
+    color: red;
+
+    @media screen and (max-width: 724px) {
+        font-size: 1.5em;
+    }
+
+    &__title {
+        h1 {
+            font-size: 2.8rem;
+
+            @media screen and (max-width: 724px) {
+                font-size: 1.5em;
+            }
+        }
+    }
+
+    &__subtitle {
+        font-size: 1.4rem;
+        color: var(--Desaturated-text);
+    }
+
+    &__toggle {
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+        
+        &--mode {
+            font-size: 1.4rem;
+            @media screen and (max-width: 620px) {
+                font-size: .8em;
+                transform: translateX(3rem);
+            }
+        }
+
+        &--btn {
+            width: 5rem;
+            height: 2.5rem;
+            border-radius: 1.1rem;
+            background-image: linear-gradient(to right, var(--color-green), var(--color-facebook));
+            position: relative;
+
+            &::before {
+                content: "";
+                position: absolute;
+                border-radius: 2400px;
+                top: 0.2rem;
+                left: 0.2rem;
+                width: 2rem;
+                height: 2rem;
+                background-color: black;
+            }
+        }
+
+    }
+
+
+}

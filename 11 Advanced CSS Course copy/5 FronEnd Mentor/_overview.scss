@@ -1,0 +1,52 @@
+.overview {
+    &__heading {
+        padding: 2rem;
+
+    }
+}
+
+.overview__cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+}
+
+.overviewcard {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: start;
+    row-gap: 1rem;
+    align-items: center;
+    // column-gap: -45rem;
+    background-color: var(--DarkDesaturatedBlue);
+    border-radius: 1rem;
+    margin: 2rem;
+    padding: 2rem 0;
+
+    &__view {
+        font-size: 1.4rem;
+        color: var(--Desaturated-text);
+        margin-left: 3rem;
+    }
+
+    &__icon,
+    &__newcount {
+        justify-self: end;
+        margin-right: 3rem;
+    }
+
+    &__count {
+        font-size: 3.2rem;
+        font-weight: 700;
+        margin-left: 3rem;
+    }
+
+    &__newcount {
+        font-size: 1.2rem;
+        color: var(--color-green);
+        font-weight: 700;
+
+        &-drop {
+            color: var(--color-red);
+        }
+    }
+}

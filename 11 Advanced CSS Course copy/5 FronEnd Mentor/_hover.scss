@@ -1,0 +1,6 @@
+.card, .overview__card{
+    cursor: pointer;
+    &:hover{
+        background-color: #343b56;
+    }
+}
