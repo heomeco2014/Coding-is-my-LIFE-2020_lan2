@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', monospace;
+}
+
+
+body {
+    height: 100vh;
+    text-align: center;
+
+    h3 {
+        margin-top: 1rem;
+    }
+}
+
+.fa-heart {
+    color: red;
+}
+
+.loveMe {
+    background: url('https://images.unsplash.com/photo-1504215680853-026ed2a45def?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80') no-repeat center center/cover;
+    height: 440px;
+    width: 300px;
+    margin: auto;
+    box-shadow: 4px 2px 5px grey,
+        -4px -2px 5px grey;
+    cursor: pointer;
+    position: relative;
+
+    .fa-heart {
+        position: absolute;
+        animation: grow 0.6s linear;
+        transform: translate(-50%, 50%) scale(0);
+        
+    }
+}
+
+
+@keyframes grow {
+    to {
+        transform: translate(-50%, -50%) scale(10);
+        opacity: 0;
+    }
+}

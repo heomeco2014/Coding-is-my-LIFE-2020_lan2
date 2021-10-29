@@ -1,0 +1,15 @@
+-novid -no-browser -nojoy -nod3d9ex -freq 144 +snd_use_hrtf 0 +exec autoexec.cfg
+
+
+things to change
+-freq 240 needs to be changed to your monitors refresh rate like the following
+  (If you are not sure of your monitors refresh rate, go with 60 as thats standard)
+ 60hz = -freq 60
+ 75hz = -freq 75
+ 100hz = -freq 100
+ 120hz = -freq 120
+ 144hz = -freq 144
+ 165hz = -freq 165
+ 180hz = -freq 180
+ 200hz = -freq 200
+ 240gz = -freq 240
