@@ -11,16 +11,29 @@ body {
   display: flex;
   flex-direction: column;
   color: black;
+  padding-bottom: 2000px;
 }
 
 .nav {
-  position: fixed;
   left: 0;
   right: 0;
   top: 0;
+  position: fixed;
+  background-color: #b5abc4;
+  transition: all 0.3s ease-in-out;
 }
 .nav .logo {
   font-size: 2rem;
+}
+.nav.active {
+  background-color: white;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+}
+.nav.active a {
+  color: #000;
+}
+.nav.active .container {
+  padding: 10px 0;
 }
 .nav__container {
   display: flex;
@@ -30,15 +43,32 @@ body {
 .nav__container a {
   text-decoration: none;
   color: black;
+  transition: all 0.2s ease-in-out;
+}
+.nav__container a::before {
+  display: block;
+  content: attr(title);
+  font-weight: bold;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
 }
 .nav__list {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+.nav__list .current {
+  color: #c0392b;
+  font-weight: bold;
+}
 .nav__item {
   list-style: none;
   padding: 7px 12px;
+}
+.nav__item:hover a {
+  color: #c0392b;
+  text-shadow: 0 0 1px #c0392b;
 }
 
 .hero {

@@ -103,10 +103,10 @@ SoNguyenLon operator-(const SoNguyenLon& sn1, const SoNguyenLon& sn2) {
             rightNow = -rightNow;
             nho = 1;
         }
+        cout << rightNow << endl;
         res.insert(res.begin(), rightNow);
     }
-    for (int i = 0; i < res.size(); i++)
-        cout << res[i];
+
 
 
 

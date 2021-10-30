@@ -1,2 +1,4 @@
-    // SoNguyenLon a;
-    // cout << a;
+        // if (rightNow < 0) {
+        //     rightNow = -rightNow;
+        //     nho = 1;
+        // }
