@@ -67,6 +67,7 @@ SoNguyenLon operator-(const SoNguyenLon& sn1, const SoNguyenLon& sn2) {
     first = integerToArray(sn1);
     second = integerToArray(sn2);
     int fSize = sn1.num.size();
+    int tmpSize = sn1.num.size();
     int sSize = sn2.num.size();
     int nho = 0;
     while (fSize != 0 && sSize != 0)
@@ -74,7 +75,7 @@ SoNguyenLon operator-(const SoNguyenLon& sn1, const SoNguyenLon& sn2) {
         int temp = first[fSize] - second[sSize] - nho;
         if (temp < 0) {
             temp = first[fSize] + 10 - second[sSize] - nho;
-            nho++;
+            nho = 1;
         }
         fSize--;
         sSize--;
@@ -87,15 +88,20 @@ SoNguyenLon operator-(const SoNguyenLon& sn1, const SoNguyenLon& sn2) {
     }
 
     res.num = "";
-    for (int i = sn1.num.size(); i > 0; i--)
+    for (int i = tmpSize; i >= 0; i--)
     {
-        res.num += (result[i] + '0');
+        res.num += result[i] + '0';
     }
-    for (int i = 0; i < res.num.size(); i++)
-    {
-        cout << res.num[i] << " ";
-    }
-    
+    // for (int i = 0; i < sn1.num.size(); i++)
+    // {
+    //     cout << first[i] << " ";
+    // }
+    // cout << endl;
+    // for (int i = 0; i < sn2.num.size(); i++)
+    // {
+    //     cout << second[i] << " ";
+    // }
+    cout << endl;
     return res;
 
 }
