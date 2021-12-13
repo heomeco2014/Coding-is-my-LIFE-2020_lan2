@@ -15,9 +15,9 @@ private:
     string m_hoVaten;
     double diemA, diemB, diemC, diemTb;
     int m_id;
-    static int id;
     static HocSinh sHSDiemTBCaoNhat;
 public:
+    static int sid;
     HocSinh();
     HocSinh(const string&, const double, const double, const double);
     void GanDiem(const double&, const double&, const double&);
@@ -25,13 +25,13 @@ public:
     static HocSinh HSDiemTBCaoNhat();
     friend ostream& operator<<(ostream&, const HocSinh&);
 };
-int HocSinh::id = 1363000;
+int HocSinh::sid = 1363000;
 HocSinh HocSinh::sHSDiemTBCaoNhat = HocSinh();
 ostream& operator << (ostream& os, const HocSinh& hs) {
     os << fixed << "HS: " << hs.m_hoVaten << ", MS: " << hs.m_id << ", DTB: " << setprecision(2) << hs.diemTb;
     return os;
 }
-HocSinh::HocSinh() :m_hoVaten(" "), diemA(0), diemB(0), diemC(0), diemTb(0), m_id(++id) {}
+HocSinh::HocSinh() :m_hoVaten(" "), diemA(0), diemB(0), diemC(0), diemTb(0), m_id(++sid) {}
 HocSinh::HocSinh(const string& hoTen, const double diemA, const double diemB, const double diemC) {
     m_hoVaten = hoTen;
     this->diemA = abs(diemA);

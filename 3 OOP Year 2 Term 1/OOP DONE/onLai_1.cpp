@@ -8,7 +8,7 @@ using namespace std;
 class HocSinh {
 private:
     string name;
-    int id;
+    int sid;
     double diemA, diemB, diemC, diemTb;
     static HocSinh sHSDiemTBCaoNhat;
     static int minimumID;
@@ -31,12 +31,12 @@ HocSinh::HocSinh()
     name = "";
     diemA = diemB = diemC = 0;
     diemTb = (diemA + diemB + diemC) / 3.0;
-    id = ++minimumID;
+    sid = ++minimumID;
 }
 HocSinh::HocSinh(const string& hoVaTen, const double& d1, const double& d2, const double& d3)
     : name(hoVaTen)
     , diemTb((abs(d1) + abs(d2) + abs(d3)) / 3.0)
-    , id(++minimumID)
+    , sid(++minimumID)
 {
     if (diemTb > sHSDiemTBCaoNhat.diemTb)
         sHSDiemTBCaoNhat = *this;
@@ -61,7 +61,7 @@ HocSinh HocSinh::HSDiemTBCaoNhat() {
 }
 ostream& operator<<(ostream& os, const HocSinh& hs)
 {
-    os << fixed << "HS: " << hs.name << ", MS: " << hs.id << ", DTB: " << setprecision(2) << hs.diemTb;
+    os << fixed << "HS: " << hs.name << ", MS: " << hs.sid << ", DTB: " << setprecision(2) << hs.diemTb;
     return os;
 }
 
